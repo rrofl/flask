@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: grey;
+    text-align: center;
+}
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll; 
+  }
+p{
+    text-align: center;
+}
+.container{
+    display: flex;
+    position: relative;
+}
+.container .steam_logo{
+    position: absolute;
+    top: -52px;
+    left: 10px;
+    size: 20%;
+}
+.container .menu_logo{
+    position: absolute;
+    top: -52px;
+    right: 10px;
+    size: 20%;
+}
+.container .obraz1{
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.container .obraz2{
+    position: relative;
+    left: -800px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 17% 100%);
+}
+.container .obraz1 img, .obraz2 img, .prostokat1 img, .prostokat2 img{
+    transition: 0.5s;
+}
+.container .obraz1:hover img, .obraz2:hover img, .prostokat1:hover img, .prostokat2:hover img{
+    transform: scale(1.05);
+}
+.container .main_prostokat{
+    background-color: grey;
+    width: 100%;
+}
+.container .prostokat1{
+    position: absolute;
+    margin-top: 1250px;
+    margin-left: 20%;
+}
+.container .prostokat2{
+    position: absolute;
+    margin-top: 1250px;
+    margin-left: 60%;
+}
+.stopka{
+    position: relative;
+    bottom: -1100px;
+    width: 100%;
+}
