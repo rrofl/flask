@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block title %} Home {% endblock %} {% block
+background %}
+<link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}" />
+<div
+  class="background"
+  style="background-image: url('/static/background.png')"
+></div>
+{% endblock %}{% block csgo %}
+<div class="csgo_logo">
+  <img src="/static/csgo_logo.png" />
+</div>
+{% endblock %}{% block valorant %}
+<div class="valorant_logo">
+  <img src="/static/valorant_logo.png" />
+</div>
+{% endblock %}
